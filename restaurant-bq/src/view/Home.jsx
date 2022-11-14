@@ -1,21 +1,20 @@
-import "../style.css";  
+import "../style.css";
 import logoRestaurant from "../componentes/img/logoRestaurant.png";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
    <>
    <div className="sectionHome">
-      <div className="logoHome">
+      <div className="logoRestaurantHome">
         <img src={logoRestaurant} alt="logo principal" />
       </div>
       <div className="btnHome">
-        <button type="button" className="btnMenu"><Link to="/Menu">Mesero</Link></button>
-        <button type="button" className="btnOrders"><Link to="/Orders">Pedidos</Link></button>
-        <button type="button" className="btnKitchen"><Link to="/Kitchen">Cocina</Link></button>
+        <button type="button" className="btnMenu"><a href="/Menu">Mesero</a></button>
+        <button type="button" className="btnOrders"><a href="/Orders">Pedidos</a></button>
+        <button type="button" className="btnKitch"><a href="/Kitchen">Cocina</a></button>
       </div>
    </div>
-   
+
   </>
   );
 };

@@ -1,29 +1,36 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Slab:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fleur+De+Leah&family=Josefin+Slab:ital,wght@1,600&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
- /* *{
-    outline: 1px solid blue !important;
-  }
-   */
-  html {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-  
-  }
- .sectionHome{
-   text-align: center;
-   padding-top: 4%;
+/* 
+* {
+  outline: 1px solid blue !important;
+} */
 
-  }
-  
-  .btnHome button {
+html {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+}
+
+.sectionHome {
+  text-align: center;
+  padding-top: 4%;
+
+}
+
+.btnHome button {
   width: 20%;
   padding: 5%;
   margin: 2%;
@@ -35,31 +42,211 @@
   border-radius: 50%;
   border: outset 4px #CA5E7C;
 
-  }
-  /* .btnMenu, .btnOrders, .btnKitchen {
-    text-decoration: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
 
-  } */
+.btnHome {
+  padding-top: 4%;
+}
 
-  .btnHome{
-    padding-top: 4%;
-  }
-  header{
-    position: absolute;
-    width: 100%;
-    height:15% ;
-    left: 0px;
-    top: 0px;
-    background: rgba(202, 94, 124, 0.09);
-    mix-blend-mode: darken;
-    border: 3px solid #891E3C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  /* .logoRestaurant{
-    width: 30%
+.header {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+    border: solid #B63D50;
+  
+
+  }
+.logoRestaurantHeader{
+  width: 30%;
+  height: 30%;
+
+}
+nav{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row;
+
+
+}
+   
+  /* position: absolute;
+  width: 100%;
+  height: 15%;
+  left: 0px;
+  top: 0px;
+  background: rgba(202, 94, 124, 0.09);
+  mix-blend-mode: darken;
+  border: 3px solid #891E3C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+
+
+/* nav {
+  display: flex;
+  width: 10%;
+  height: 10%;
 } */
 
+.logoHome button,
+.logoMenu button,
+.logoKitchen button,
+.logoOrders button {
+  width: 70%;
+  height: 70%;
+  display: flex;
+ justify-content: space-between;
+  }
+
+.viewMenu{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+margin-top: 3%;
+}
+
+.containerMenu{
+width: 40%;
+height: 100%;
+}
+
+h2{
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+.dataClient{
+  background: #B63D50;
+ text-align: center;
+ display: flex;
+ justify-content: space-around;
+ padding: 1%;
+
+
+}
+ .name, .table {
+  background: #B63D50;
+  color: white;
+  padding: 2%;
+  margin-top: 1%;
+  border: none;
+  font-size: 18px;
+ 
+}
+.name::placeholder, .table::placeholder{
+  color:white;
+}
+.btnSend{
+  border: solid #FFC519;
+  border-radius: 100%;
+  background: white;
+  font-size: 15px;
+  color: black;
+  padding: 2%;
+
+}
+.btnSend:active {
+  position: relative;
+  top: 3px;
+  color: rgb(250, 250, 250);
+  background:#FFC519;
+}
+.btnSend:hover {
+  background-color: #FFC519;
+}
+.btnDrinksFood{
+  width: 100%;
+  height: 10%;
+  margin-top: 2%;
   
+}
+.btnFood{
+  width: 50%;
+  background: #CA5E7C;
+  color: white;
+  border: none;
+  padding: 2%;
+  font-size: 15px;
+
+}
+.btnDrinks{
+  width: 50%;
+  background: #B63D50;
+  color: white;
+  border: none;
+  padding: 2%;
+  font-size: 15px;
+}
+.btnFood:active {
+  position: relative;
+  top: 1px;
+  color: rgb(250, 250, 250);
+  background: #B63D50;
+}
+
+.btnDrinks:active {
+  position: relative;
+  top: 1px;
+  color: rgb(250, 250, 250);
+  background: #CA5E7C;
+}
+
+.printMenu{
+  width: 100%;
+  background: #891E3C;
+  color: white;
+  padding: 1%;
+  margin-top: 2%;
+
+}
+.btnMenu{
+  background: #FFC519;
+  color: white;
+  border: none;
+  padding: 2%;
+  text-align: center;
+
+}
+.containerOrders{
+  width: 40%;
+  height: 100%;
+}
+.dataClientPrint{
+  background: #B63D50;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+.totalSend{
+  background: #B63D50;
+
+}
+.btnSendKitchen{
+    border: solid #FFC519;
+    border-radius: 100%;
+    background: white;
+    font-size: 15px;
+    color: black;
+    padding: 2%;
+  
+  }
+  .btnSendKitchen:active {
+    position: relative;
+    top: 3px;
+    color: rgb(250, 250, 250);
+    background:#FFC519;
+  }
+  .btnSendKitchen:hover {
+    background-color: #FFC519;
+  }
+
