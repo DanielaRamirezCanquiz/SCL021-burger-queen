@@ -2,19 +2,19 @@
     {
     "id": "d1",
     "name": "Café Americano",
-    "price": 5,
+    "price": 5.00,
     "category": "Drinks"
     },
     {
     "id": "d2",
     "name": "Café con Leche",
-    "price": 5,
+    "price": 5.00,
     "category": "Drinks"
     },
     {
     "id": "d3",
     "name": "Jugo Natural",
-    "price": 1,
+    "price": 1.00,
     "category": "Drinks"
     },
     {

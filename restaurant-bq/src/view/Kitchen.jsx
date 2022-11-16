@@ -1,6 +1,10 @@
+import Header from "../componentes/Header";
+
 const Kitchen = () => {
     return (
-       <div>Kitchen</div>
+       <>
+         <Header></Header>
+       </>
   
     );
   };

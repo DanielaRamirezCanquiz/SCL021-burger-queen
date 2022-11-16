@@ -1,23 +1,19 @@
 import Header from "../componentes/Header";
+import { useState } from "react";
 import data from "../data.json";
 
 
-
-const drinksData = data.drinks
-console.log(drinksData)
-const showItemsDrinks = () => {
-drinksData.forEach(element => { 
-  <button type="button">${element.name}</button>
-  console.log(element.name)
-})
-
-}
-
+const drinksData = data.drinks;
+const foodData = data.food;
+const sideDishData = data.sideDish;
+const extraData = data.extra; 
 
 const Menu = () => {
+  const [items, setItems] = useState ([])
+  
   return (
     <>
-      <Header></Header>
+      {/* <Header></Header> */}
       <div className="viewMenu">
         <div className="containerMenu">
           <h2>Menú</h2>
@@ -34,15 +30,24 @@ const Menu = () => {
             <input type="submit" id="send"className="btnSend" value="Ingresar Pedido" autocomplete="off" />
             </div>
             <div className="btnDrinksFood">
-              <button type="button" className="btnFood">Comida</button>
-              <button type="button" className="btnDrinks" onClick={showItemsDrinks()}>Bebidas</button>
-              <div className="printMenu">
-                <h3>food</h3>
-                <h3>Drinks</h3>
-                <button type="button" className="btnMenu">Hamburguesa Simple</button>
+              <button type="button" className="btnFood" onClick={() => {setItems(foodData)}}>Comida</button>
+              <button type="button" className="btnSideDish" onClick={() => {setItems(sideDishData)}}>Acompañamiento</button>
+              <button type="button" className="btnExtra" onClick={() => {setItems(extraData)}}>Extras</button>
+              <button type="button" className="btnDrinks" onClick={() => {setItems(drinksData)}}>Bebidas</button>
               </div>
-          </div>
-        </div>
+              <div className="printMenu">{
+                items.map((item) => 
+                  <button type = "button" className ="btnItem" key= {item.id}>
+                    <h3>{item.name}</h3>
+                    <h3>{item.price}</h3>
+                  </button>
+                )} 
+              </div>
+           </div>
+
+
+{/* Resumen del Pedido */}
+
         <div className="containerOrders">
             <h2>Resumen Pedido</h2>
           <div className="dataClientPrint">

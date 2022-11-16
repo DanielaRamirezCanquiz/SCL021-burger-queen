@@ -1,6 +1,9 @@
+import Header from "../componentes/Header";
 const Orders= () => {
     return (
-       <div>Orders</div>
+       <>
+          <Header></Header>
+       </>
   
     );
   };

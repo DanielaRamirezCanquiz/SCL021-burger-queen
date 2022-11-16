@@ -1,5 +1,5 @@
 import "../style.css";
-import logoRestaurant from "../componentes/img/logoRestaurant.png";
+import logoRestaurant from "../componentes/img/logoRestaurant.jpg";
 
 const Home = () => {
   return (
