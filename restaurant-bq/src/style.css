@@ -24,8 +24,7 @@ html {
   padding-top: 4%;
 
 }
-
-.btnHome button {
+.btnMenu, .btnOrders, .btnKitchen{
   width: 20%;
   padding: 5%;
   margin: 2%;
@@ -35,17 +34,13 @@ html {
   font-size: 40px;
   border-radius: 50%;
   border: outset 4px #CA5E7C;
-
-}
-a{
   color: white;
-  text-decoration: none;
 }
 
-.btnHome {
-  padding-top: 4%;
+.btnHome :active {
+  position: relative;
+  top: 5px;
 }
-
 .header {
     display: flex;
     flex-direction: row;
@@ -54,11 +49,11 @@ a{
     height: 40%;
     border: solid #B63D50;
   
-
   }
-.logoRestaurantHeader{
-  width: 30%;
-  height: 30%;
+
+.logoMain{
+  width: 60%;
+  height: 60%;
 
 }
 nav{
@@ -67,6 +62,15 @@ nav{
   align-items: flex-end;
   flex-direction: row;
 
+}
+.btnsHeader{
+  background: black;
+  width: 100%;
+ margin-bottom: 10%;
+}
+.btnsHeader:active {
+  position: relative;
+  top: 5px;
 }
    
 .logoHome button,
@@ -103,6 +107,7 @@ h2{
  display: flex;
  justify-content: space-around;
  padding: 1%;
+ border: solid 1px black;
 
 
 }
@@ -111,7 +116,6 @@ h2{
   color: white;
   padding: 2%;
   margin-top: 1%;
-  border: none;
   font-size: 18px;
  
 }
@@ -119,11 +123,11 @@ h2{
   color:white;
 }
 .btnSend{
-  border: solid #FFC519;
+  border: solid #F6C771;
   border-radius: 100%;
-  background: white;
+  background:  #ffc519;
   font-size: 15px;
-  color: black;
+  color: white;
   padding: 2%;
 
 }
@@ -131,12 +135,11 @@ h2{
   position: relative;
   top: 3px;
   color: rgb(250, 250, 250);
-  background:#FFC519;
 }
 .btnSend:hover {
-  background-color: #FFC519;
+  background-color: #7b6215;
 }
-.btnDrinksFood{
+.containerDrinksFood{
   width: 100%;
   height: 10%;
   margin-top: 2%;
@@ -146,7 +149,7 @@ h2{
   width: 50%;
   background: #CA5E7C;
   color: white;
-  border: none;
+  border: solid 1px black;
   padding: 2%;
   font-size: 15px;
 
@@ -155,7 +158,7 @@ h2{
   width: 50%;
   background: #CA5E7C;
   color: white;
-  border: none;
+  border: solid 1px black;
   padding: 2%;
   font-size: 15px;
 }
@@ -176,7 +179,7 @@ h2{
   width: 50%;
   background: #B63D50;
   color: white;
-  border: none;
+  border: solid 1px black;
   padding: 2%;
   font-size: 15px;
 
@@ -192,7 +195,7 @@ h2{
   width: 50%;
   background: #B63D50;
   color: white;
-  border: none;
+  border: solid 1px black;
   padding: 2%;
   font-size: 15px;
   }
@@ -223,6 +226,13 @@ h2{
   margin-top: 2%;
   display: flex;
   flex-direction: row;
+
+}
+.btnItem:active{
+  position: relative;
+  top: 1px;
+  color: rgb(250, 250, 250);
+  background: #CA5E7C;
 
 }
 .containerOrders{
@@ -257,5 +267,14 @@ h2{
   }
   .btnSendKitchen:hover {
     background-color: #FFC519;
+  }
+
+  .btnsAmount{
+    width: 30%;
+    height: 30%;
+  }
+  .btnSubtract, .btnPlus, .btnDelete{
+    width: 30%;
+    height: 30%;
   }
 

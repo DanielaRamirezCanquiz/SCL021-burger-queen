@@ -1,4 +1,7 @@
 import Header from "../componentes/Header";
+import logoBtnSubtract from "../componentes/img/logoBtnSubtract.png"
+import logoBtnPlus from "../componentes/img/logoBtnPlus.png"
+import logoBtnDelete from "../componentes/img/logoBtnDelete.png"
 import { useState } from "react";
 import data from "../data.json";
 
@@ -10,10 +13,11 @@ const extraData = data.extra;
 
 const Menu = () => {
   const [items, setItems] = useState ([])
+  const [summary, setSummary] = useState([])
   
   return (
     <>
-      {/* <Header></Header> */}
+      <Header></Header>
       <div className="viewMenu">
         <div className="containerMenu">
           <h2>Menú</h2>
@@ -29,15 +33,15 @@ const Menu = () => {
             />
             <input type="submit" id="send"className="btnSend" value="Ingresar Pedido" autocomplete="off" />
             </div>
-            <div className="btnDrinksFood">
+            <div className="containerDrinksFood">
               <button type="button" className="btnFood" onClick={() => {setItems(foodData)}}>Comida</button>
+              <button type="button" className="btnDrinks" onClick={() => {setItems(drinksData)}}>Bebidas</button>
               <button type="button" className="btnSideDish" onClick={() => {setItems(sideDishData)}}>Acompañamiento</button>
               <button type="button" className="btnExtra" onClick={() => {setItems(extraData)}}>Extras</button>
-              <button type="button" className="btnDrinks" onClick={() => {setItems(drinksData)}}>Bebidas</button>
               </div>
               <div className="printMenu">{
                 items.map((item) => 
-                  <button type = "button" className ="btnItem" key= {item.id}>
+                  <button type = "button" className ="btnItem" onClick={() => {setSummary([...summary, item])}} key= {item.id}>
                     <h3>{item.name}</h3>
                     <h3>{item.price}</h3>
                   </button>
@@ -48,17 +52,19 @@ const Menu = () => {
 
 {/* Resumen del Pedido */}
 
+
         <div className="containerOrders">
-            <h2>Resumen Pedido</h2>
           <div className="dataClientPrint">
-          <button type="button" className="btnMenu">Hamburguesa Simple</button>
+
+
+
+          
             </div>
             <div className="orders">
               <div className="btnsAmount">
-                <button type="button">Restar</button>
-                <button type="button">Sumar</button>
-                <button type="button">Eliminar</button>
-                <input type="text" placeholder="Cantidad"/>
+              <button type="button" className="btnSubtract"><img src={logoBtnSubtract} className="logoSubtract" alt="logoSubtract"/></button>
+              <button type="button" className="btnPlus"><img src={logoBtnPlus} className="logoPlus" alt="logoSubtract"/></button>
+              <button type="button" className="btnDelete"><img src={logoBtnDelete} className="logoDelete" alt="logoSubtract"/></button>
               </div>
               <div className="totalSend">
                 <input type="number" readonly/>

@@ -6,12 +6,12 @@ const Home = () => {
    <>
    <div className="sectionHome">
       <div className="logoRestaurantHome">
-        <img src={logoRestaurant} alt="logo principal" />
+        <img src={logoRestaurant}  className="logoMain" alt="logo main" />
       </div>
       <div className="btnHome">
-        <button type="button" className="btnMenu"><a href="/Menu">Mesero</a></button>
-        <button type="button" className="btnOrders"><a href="/Orders">Pedidos</a></button>
-        <button type="button" className="btnKitch"><a href="/Kitchen">Cocina</a></button>
+      <a href="/Menu"><button type="button" className="btnMenu">Mesero</button></a>
+      <a href="/Orders"><button type="button" className="btnOrders">Pedidos</button></a>
+      <a href="/Kitchen"> <button type="button" className="btnKitchen">Cocina</button></a>
       </div>
    </div>
 
