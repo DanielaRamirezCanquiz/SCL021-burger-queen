@@ -3,43 +3,54 @@
     "id": "d1",
     "name": "Café Americano",
     "price": 5.00,
-    "category": "Drinks"
+    "category": "Drinks",
+    "qty": 0
     },
     {
     "id": "d2",
     "name": "Café con Leche",
     "price": 5.00,
-    "category": "Drinks"
+    "category": "Drinks",
+    "qty": 0
+    
     },
     {
     "id": "d3",
     "name": "Jugo Natural",
     "price": 1.00,
-    "category": "Drinks"
+    "category": "Drinks",
+    "qty": 0
     },
     {
     "id": "d4",
     "name": "Agua Mineral 500ml",
-    "price": 10,
+    "price": 10.00,
     "category": "Drinks"
+    ,
+    "qty": 0
     },
     {
     "id": "d5",
     "name": "Agua Mineral 750ml",
-    "price": 10,
+    "price": 10.00,
     "category": "Drinks"
+    ,
+    "qty": 0
     },
     {
     "id": "d6",
     "name": "Bebida 500ml",
-    "price": 10,
+    "price": 10.00,
     "category": "Drinks"
+    ,
+    "qty": 0
     },
     {
     "id": "d7",
     "name": "Bebida 750ml",
-    "price": 10,
-    "category": "Drinks"
+    "price": 10.00,
+    "category": "Drinks",
+    "qty": 0
     }
 ],
 
@@ -47,44 +58,52 @@
     {
     "id": "f1",
     "name": "Sandwich Jamón-Queso",
-    "price": 7,
-    "category": "Food"
+    "price": 7.00,
+    "category": "Food",
+    "qty": 0
     },
     {
     "id": "f2",
     "name": "Hamburguesa Simple Carne",
-    "price":7,
-    "category": "Food"
+    "price":7.00,
+    "category": "Food",
+    "qty": 0
     },
     {
     "id": "f3",
     "name": "Hamburguesa Simple Pollo",
-    "price":7,
-    "category": "Food"
+    "price":7.00,
+    "category": "Food",
+    "qty": 0
     },
     {
     "id": "f4",
     "name": "Hamburguesa Simple Veg",
     "price":7,
-    "category": "Food"
+    "category": "Food",
+    "qty": 0
     },
     {
     "id": "f5",
     "name": "Hamburguesa Doble Carne",
-    "price":8,
+    "price":8.00,
     "category": "Food"
+    ,
+    "qty": 0
     },
     {
     "id": "f6",
     "name": "Hamburguesa Doble Pollo",
-    "price":8,
-    "category": "Food"
+    "price":8.00,
+    "category": "Food",
+    "qty": 0
     },
     {
     "id": "f7",
     "name": "Hamburguesa Doble Veg",
-    "price":8,
-    "category": "Food"
+    "price":8.00,
+    "category": "Food",
+    "qty": 0
     }
 ],
 "sideDish": [
@@ -92,28 +111,32 @@
     {
     "id": "s1",
     "name": "Papas Fritas",
-    "price": 4,
-    "category": "Side dish"
+    "price": 4.00,
+    "category": "Side dish",
+    "qty": 0
     },
     {
     "id": "s2",
     "name": "Aros de Cebolla",
-    "price": 4,
-    "category": "Food"
+    "price": 4.00,
+    "category": "Side dish",
+    "qty": 0
     }
 ],
 "extra": [
     {
     "id": "e1",
     "name": "Queso",
-    "price": 1,
-    "category": "Extra"
+    "price": 1.00,
+    "category": "Extra",
+    "qty": 0
     },
     {
     "id": "e2",
     "name": "Huevo",
-    "price": 1,
-    "category": "Extra"
+    "price": 1.00,
+    "category": "Extra",
+    "qty": 0
     }
 ]
 }

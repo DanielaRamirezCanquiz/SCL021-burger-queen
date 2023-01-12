@@ -28,13 +28,13 @@ html {
   width: 20%;
   padding: 5%;
   margin: 2%;
-  background-color: #B63D50;
+  background-color: #891E3C;
   font-family: 'Fleur De Leah', cursive;
   text-decoration: none;
   font-size: 40px;
   border-radius: 50%;
   border: outset 4px #CA5E7C;
-  color: white;
+  color: whitesmoke;
 }
 
 .btnHome :active {
@@ -58,7 +58,7 @@ html {
 }
 nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   flex-direction: row;
 
@@ -98,11 +98,12 @@ h2{
   font-family: 'Fleur De Leah', cursive;
   font-size: 40px;
   text-align: center;
+  color:#f4babf;
 
 }
 
 .dataClient{
-  background: #B63D50;
+ background: #B63D50;
  text-align: center;
  display: flex;
  justify-content: space-around;
@@ -117,28 +118,31 @@ h2{
   padding: 2%;
   margin-top: 1%;
   font-size: 18px;
+  border: 1px solid  white;
  
 }
 .name::placeholder, .table::placeholder{
   color:white;
 }
+
 .btnSend{
-  border: solid #F6C771;
+  border: solid whitesmoke;
   border-radius: 100%;
-  background:  #ffc519;
+  background-color: #891E3C;
   font-size: 15px;
   color: white;
   padding: 2%;
-
 }
 .btnSend:active {
   position: relative;
   top: 3px;
   color: rgb(250, 250, 250);
+  background:#FFC519;
 }
 .btnSend:hover {
-  background-color: #7b6215;
+  background-color: #FFC519;
 }
+
 .containerDrinksFood{
   width: 100%;
   height: 10%;
@@ -251,11 +255,11 @@ h2{
 
 }
 .btnSendKitchen{
-    border: solid #FFC519;
+    border: solid whitesmoke ;
     border-radius: 100%;
-    background: white;
+    background-color: #891E3C;
     font-size: 15px;
-    color: black;
+    color: white;
     padding: 2%;
   
   }
@@ -269,12 +273,42 @@ h2{
     background-color: #FFC519;
   }
 
-  .btnsAmount{
-    width: 30%;
+  /* .btnsAmount{
+    width: 10%;
     height: 30%;
-  }
+  } */
   .btnSubtract, .btnPlus, .btnDelete{
-    width: 30%;
-    height: 30%;
+    width: 5%;
+    height: 5%;
+    background: #891E3C;
   }
+  .btnSubtract:active, .btnPlus:active, .btnDelete:active {
+    position: relative;
+    top: 2px;
+    background: #FFC519;
+    }
+.logoSubtract, .logoPlus, .logoDelete {
+  width: 100%;
 
+}
+.containerAmount{
+  width: 100%;
+  background: #891E3C;
+  color: white;
+  padding: 2%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.itemOrder{
+  width: 70%;
+  background: #D18A0A;
+  color: white;
+  border: none;
+  padding: 1%;
+  text-align: center;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+
+}
